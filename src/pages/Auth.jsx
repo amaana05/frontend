@@ -16,7 +16,7 @@ function Auth() {
       // api request to login or register
 
       const { data } = await axios.post(
-        `http://localhost:3002/api/users${isRegister ? "" : "/login"}`,
+        `https://backend-m5fo.onrender.com/api/users${isRegister ? "" : "/login"}`,
         { user: values }
       );
 
